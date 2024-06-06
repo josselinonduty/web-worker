@@ -64,7 +64,7 @@ class EventTarget {
 function Event(type, target) {
 	this.type = type;
 	this.timeStamp = Date.now();
-	this.target = this.currentTarget = this.data = null;
+	this.target = this.currentTarget = this.data = target;
 }
 
 // this module is used self-referentially on both sides of the
